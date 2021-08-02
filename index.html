@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-<!---  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> -->
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHR0H048H4"></script>
 
@@ -94,34 +94,6 @@
 
 <body translate="no" >
 
-  <script>
-  $(document).ready(function() {
-    $("a").click(function(e) {
-        e.preventDefault();
-        if($(this).attr("href") == "https://blog.joeknittel.com/") {
-          $link = $(this).attr("href");
-          $("body").fadeOut(500,function(){
-            window.location = $link;
-          });
-        }
-      else {
-          $link = $(this).attr("href");
-          window.location = $link;
-      }
-    });
-
-  });
-
-  $(window).unload(function () { $(window).unbind('unload'); });
-
-  $(window).bind('pageshow', function(event) {
-    if (event.originalEvent.persisted) {
-        window.location.reload()
-    }
-  });
- </script>
-
-
   <div id="fullpage">
     <div class="section">
       <a href = "https://blog.joeknittel.com/">Blog
@@ -149,10 +121,8 @@
     </div>
   </div>
 
-<!---  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
   <script src='assets/jquery.min.js'></script>
   <script src='assets/fullpage.js'></script>
-<!---  <script src='assets/all.js'></script> -->
 
   <script id="rendered-js" >
   new fullpage('#fullpage', {
